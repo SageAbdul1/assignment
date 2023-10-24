@@ -4,6 +4,7 @@ import org.example.entities.Applicants;
 import org.example.entities.Principal;
 import org.example.entities.Student;
 import org.example.entities.Teachers;
+import org.example.enums.Courses;
 import org.example.schoolinterface.Schoolinterface;
 
 public class ImplementationAcademic implements Schoolinterface {
@@ -18,7 +19,7 @@ public class ImplementationAcademic implements Schoolinterface {
     }
 
     @Override
-    public void teach(Teachers teachers) {
-
+    public Courses teach(Teachers teachers) {
+        return teachers.getCoursesTaken();
     }
 }

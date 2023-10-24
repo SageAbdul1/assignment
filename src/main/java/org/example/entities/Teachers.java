@@ -1,9 +1,9 @@
 package org.example.entities;
 
-import org.example.enums.courses;
+import org.example.enums.Courses;
 
 public class Teachers extends User{
-    private courses coursesTaken;
+    private Courses coursesTaken;
 
     @Override
     public String toString() {
@@ -12,11 +12,13 @@ public class Teachers extends User{
                 '}';
     }
 
-    public courses getCoursesTaken() {
+    public Courses getCoursesTaken() {
         return coursesTaken;
     }
 
-    public void setCoursesTaken(courses coursesTaken) {
+    public void setCoursesTaken(Courses coursesTaken) {
         this.coursesTaken = coursesTaken;
     }
+
+
 }

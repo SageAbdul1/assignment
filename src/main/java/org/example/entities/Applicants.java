@@ -36,7 +36,7 @@ public class Applicants extends User {
             System.out.println("congratulations you are hired");
 
         } else {
-            System.out.println("you are hired not hired");
+            System.out.println("you are not hired");
             }
         }
 
